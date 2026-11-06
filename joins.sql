@@ -14,7 +14,7 @@ select t1.film_id, t1.title, c.name from sakila.film as t1 left join sakila.film
 join sakila.category as c on t2.category_id = c.category_id;
 
 # Show all customers and staff emails from both customer and staff tables using a full outer join (simulate using LEFT + RIGHT + UNION).
-select email from sakila.staff union all select email from sakila.customer;
+#select email from sakila.staff union all select email from sakila.customer;
 
 SELECT
     c.customer_id,
@@ -36,7 +36,7 @@ FROM sakila.customer AS c
 RIGHT JOIN sakila.staff AS s
     ON c.email = s.email;
 
-select count(*) from sakila.staff;
+#select count(*) from sakila.staff;
 
 # Find all actors who acted in the film "ACADEMY DINOSAUR".
 select t3.first_name, t3.last_name, t1.title from sakila.film 
